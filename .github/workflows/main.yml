@@ -10,3 +10,7 @@ jobs:
       - uses: parasoft/parasoft-coverage-action@jason_cicd960
         with:
           report: reports/unit/coverage.xml
+      - uses: actions/upload-artifact@v3
+        with:
+          name: coberturaReport
+          path: parasoft-coverage-action-demo/reports/unit/coverage-cobertura.xml
