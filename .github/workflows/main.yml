@@ -7,4 +7,6 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v2
-      - uses: parasoft/parasoft-coverage-action@renee_cicd959
+      - uses: parasoft/parasoft-coverage-action@jason_cicd960
+        with:
+          report: reports/unit/coverage.xml
