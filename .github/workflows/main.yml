@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: parasoft/parasoft-coverage-action@jason_cicd960
         with:
-          report: **/coverage.xml
+          report: "reports/unit/coverage.xml"
       - uses: actions/upload-artifact@v3
         with:
           name: coberturaReport
