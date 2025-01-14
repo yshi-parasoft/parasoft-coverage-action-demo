@@ -5,6 +5,10 @@ jobs:
   Test:
     runs-on: ubuntu-24.04
     steps:
+      - name: Check Debug Settings
+        run: |
+          echo "Runner Debug: $ACTIONS_RUNNER_DEBUG"
+          echo "Step Debug: $ACTIONS_STEP_DEBUG"
       - uses: actions/checkout@v2
       - uses: parasoft/parasoft-coverage-action@jason_cicd961&&cicd983
         with:
