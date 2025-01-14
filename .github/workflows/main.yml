@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v2
-      - uses: parasoft/parasoft-coverage-action@jason_cicd960
+      - uses: parasoft/parasoft-coverage-action@jason_cicd961&&cicd983
         with:
           report: "**/*.xml"
       - uses: actions/upload-artifact@v3
