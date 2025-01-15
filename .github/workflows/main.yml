@@ -13,5 +13,5 @@ jobs:
         with:
           name: coberturaReport
           path: |
-            reports/unit/coverage-cobertura.xml, parasoft-merged-cobertura.xml
+            reports/unit/coverage-cobertura.xml
             parasoft-merged-cobertura.xml
