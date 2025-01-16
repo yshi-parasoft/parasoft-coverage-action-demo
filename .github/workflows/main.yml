@@ -8,8 +8,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: parasoft/parasoft-coverage-action@jason_cicd961&&cicd983
         with:
-          # report: "**/*.xml"
-          report: "reports/static/report.xml"
+          report: "**/*.xml"
+          # report: "reports/static/report.xml"
       - uses: actions/upload-artifact@v4
         with:
           name: coberturaReport
